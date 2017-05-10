@@ -11,10 +11,10 @@ public class ShoppingItem {
 
     public ShoppingItem(String name,Double price){
         if(name == null || name.trim().isEmpty()){
-            throw new IllegalArgumentException("Fruit Item name can not be null or empty or number");
+            throw new IllegalArgumentException("Fruit Item name cann't be null or empty or number");
         }
         if(price == null || price < 0.0 ){
-            throw new IllegalArgumentException("Fruit Item price can not be null or less than 0.0");
+            throw new IllegalArgumentException("Fruit Item price cann't be null or less than 0.0");
         }
                      
         this.name = name.toUpperCase();
