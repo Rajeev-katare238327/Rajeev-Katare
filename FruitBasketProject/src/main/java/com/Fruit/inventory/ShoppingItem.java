@@ -16,10 +16,7 @@ public class ShoppingItem {
         if(price == null || price < 0.0 ){
             throw new IllegalArgumentException("Fruit Item price can not be null or less than 0.0");
         }
-        if(price==Math.round(getPrice())){
-            throw new IllegalArgumentException("Fruit Item price can not be string or Char.");
-        }
-             
+                     
         this.name = name.toUpperCase();
         this.price = price;
         
